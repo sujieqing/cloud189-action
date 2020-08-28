@@ -59,4 +59,5 @@ jobs:
         ${user_list[$i]}
         ${pwd_list[$i]}
         EOF
+        push_key: ${{ secrets.push_key }}
         done
