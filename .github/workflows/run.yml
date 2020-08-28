@@ -3,6 +3,7 @@ name: 签到
 on:
   push:
     branches: [ master ]
+  push_key: ${{ secrets.push_key }}
   pull_request:
     branches: [ master ]
   schedule:
@@ -60,4 +61,3 @@ jobs:
         ${pwd_list[$i]}
         EOF
         done
-push_key: ${{ secrets.push_key }}
