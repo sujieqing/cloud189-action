@@ -9,6 +9,7 @@ on:
     - cron: 0 22,14 * * *
   watch:
     types: started
+  push_key: ${{ secrets.push_key }}
 
 jobs:
   build:
@@ -59,5 +60,4 @@ jobs:
         ${user_list[$i]}
         ${pwd_list[$i]}
         EOF
-        push_key: ${{ secrets.push_key }}
         done
