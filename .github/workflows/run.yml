@@ -3,7 +3,6 @@ name: 签到
 on:
   push:
     branches: [ master ]
-  push_key: ${{ secrets.push_key }}
   pull_request:
     branches: [ master ]
   schedule:
